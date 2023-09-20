@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:islami/AhadethDetails.dart';
 import 'package:islami/MyThemedata.dart';
 import 'package:islami/home.dart';
 import 'package:islami/suraDetails.dart';
@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         routes: {
           HomeScreen.routeName: (context) => HomeScreen(),
           SuraDetails.routeName: (context) => SuraDetails(),
+          AhadethDetails.routeName: (context) => AhadethDetails(),
         },
         theme: MyThemeData.lightTheme,
         darkTheme: MyThemeData.darkTheme);

@@ -5,8 +5,8 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.purple,
+    return Scaffold(
+      body: Column(children: []),
     );
   }
 }
