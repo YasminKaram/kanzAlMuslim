@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/MyThemedata.dart';
 import 'package:islami/Tabs/Ahadeth.dart';
 import 'package:islami/Tabs/Radio.dart';
@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
-                title: Text("Islami",
+                title: Text(AppLocalizations.of(context)!.appaTitle,
                     style: Theme.of(context).textTheme.bodyLarge)),
             bottomNavigationBar: BottomNavigationBar(
               currentIndex: index,
