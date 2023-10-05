@@ -1,5 +1,7 @@
 {
   "appaTitle": "Islami",
   "suraName": "SuraName",
-  "ahadeth": "Ahadeth"
+  "ahadeth": "Ahadeth",
+  "arabic": "Arabic",
+  "english": "English"
 }
