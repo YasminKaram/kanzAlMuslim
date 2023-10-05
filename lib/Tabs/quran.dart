@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/MyThemedata.dart';
 import 'package:islami/SuraModel.dart';
 import 'package:islami/suraDetails.dart';
@@ -135,7 +136,7 @@ class QuranScreen extends StatelessWidget {
           color: MyThemeData.primaryColor,
           thickness: 2,
         ),
-        Text(("Sura Name"),
+        Text((AppLocalizations.of(context)!.suraName),
             style: Theme.of(context)
                 .textTheme
                 .bodyMedium!
