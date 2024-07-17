@@ -1,6 +1,6 @@
 # Kanz al Muslim
 
-A new Flutter project.
+My project is list view of Quran , Ahadith and  Sebha counter , play audio of radio
 
 ## Getting Started
 
