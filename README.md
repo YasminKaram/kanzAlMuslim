@@ -15,6 +15,18 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+Packages used:
+ provider: ^6.0.5
+  google_fonts: ^5.1.0
+  shared_preferences: ^2.2.1
+  http: ^1.0.0
+  audioplayers: ^5.2.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0
+
+  
+
 Ui App:
 
 | col 1      | col 2      |
