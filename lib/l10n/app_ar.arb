@@ -1,7 +1,17 @@
 {
-  "appaTitle": "إسلامي",
+  "appaTitle": "كنز المسلم",
   "suraName": "اسم السورة",
   "ahadeth": "الاحاديث",
   "arabic": "عربي",
-  "english": "انجليزي"
+  "english": "انجليزي",
+  "light": "فاتح",
+  "dark": "داكن",
+  "settings": "الإعدادات",
+  "radio": "إذاعة",
+  "sebha": "سبحه",
+  "quran": "قرأن",
+  "counter": "عداد التسبيح",
+  "quranradio": "إذاعة القرآن الكريم",
+  "lang": "اللغه",
+  "theme": "السمات"
 }

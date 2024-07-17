@@ -23,10 +23,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          SizedBox(
+            height: 20,
+          ),
           Align(
               alignment: Alignment.centerLeft,
-              child: Text("Language",
-                  style: Theme.of(context).textTheme.bodyLarge)),
+              child: Text(AppLocalizations.of(context)!.lang,
+                  style: Theme.of(context).textTheme.bodyMedium)),
           InkWell(
             onTap: () {
               showLanguageBottomSheet();
@@ -39,7 +42,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   pro.languageCode == "en"
                       ? AppLocalizations.of(context)!.english
                       : AppLocalizations.of(context)!.arabic,
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: pro.themeingMode == ThemeMode.light
                           ? MyThemeData.blackColor
                           : Colors.white)),
@@ -53,8 +56,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           Align(
               alignment: Alignment.centerLeft,
-              child: Text("Themeing",
-                  style: Theme.of(context).textTheme.bodyLarge)),
+              child: Text(AppLocalizations.of(context)!.theme,
+                  style: Theme.of(context).textTheme.bodyMedium)),
           InkWell(
             onTap: () {
               showThemeingBottomSheet();
@@ -64,8 +67,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
               padding: EdgeInsets.symmetric(horizontal: 18),
               width: double.infinity,
               child: Text(
-                  pro.themeingMode == ThemeMode.light ? "Light" : "Dark",
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                  pro.themeingMode == ThemeMode.light
+                      ? AppLocalizations.of(context)!.light
+                      : AppLocalizations.of(context)!.dark,
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: pro.themeingMode == ThemeMode.light
                           ? MyThemeData.blackColor
                           : Colors.white)),

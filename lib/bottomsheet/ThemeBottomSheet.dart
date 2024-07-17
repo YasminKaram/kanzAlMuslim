@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/Providers/MyProvider.dart';
 import 'package:provider/provider.dart';
 
@@ -20,8 +21,8 @@ class ThemeingBottomSheet extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                  "Light",
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  AppLocalizations.of(context)!.light,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: provider.themeingMode == ThemeMode.light
                           ? Theme.of(context).colorScheme.primary
                           : Theme.of(context).colorScheme.secondary),
@@ -41,8 +42,8 @@ class ThemeingBottomSheet extends StatelessWidget {
             },
             child: Row(
               children: [
-                Text("Dark",
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                Text(AppLocalizations.of(context)!.dark,
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: provider.themeingMode == ThemeMode.dark
                             ? Theme.of(context).colorScheme.primary
                             : Theme.of(context).colorScheme.secondary)),

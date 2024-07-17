@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyThemeData {
-  static Color primaryColor = Color(0xFFB7935F);
-  static Color yellowcolor = Color(0xffFACC1D);
+  static Color primaryColor = Color(0xFF00B3AD);
+  static Color yellowcolor = Color(0xFF00B3AD);
   static Color blackColor = Color(0xFF242424);
-  static Color darkPrimary = Color(0xff141A2E);
+  static Color darkPrimary = Color(0xFF242424);
   static ThemeData lightTheme = ThemeData(
       colorScheme: ColorScheme(
           brightness: Brightness.light,
@@ -23,7 +23,7 @@ class MyThemeData {
         bodySmall: GoogleFonts.elMessiri(
             fontSize: 20, fontWeight: FontWeight.w400, color: blackColor),
         bodyMedium: GoogleFonts.elMessiri(
-            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.white),
+            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.black),
         bodyLarge: GoogleFonts.elMessiri(
             fontSize: 30, fontWeight: FontWeight.bold, color: blackColor),
       ),
@@ -56,9 +56,9 @@ class MyThemeData {
           onSurface: Colors.white),
       textTheme: TextTheme(
         bodySmall: GoogleFonts.elMessiri(
-            fontSize: 20, fontWeight: FontWeight.w400, color: yellowcolor),
+            fontSize: 20, fontWeight: FontWeight.w400, color: Colors.white),
         bodyMedium: GoogleFonts.elMessiri(
-            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.yellow),
+            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.white),
         bodyLarge: GoogleFonts.elMessiri(
             fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
       ),

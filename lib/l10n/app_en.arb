@@ -1,7 +1,20 @@
 {
-  "appaTitle": "Islami",
+  "appaTitle": "Kanz al Muslim",
   "suraName": "SuraName",
   "ahadeth": "Ahadeth",
   "arabic": "Arabic",
-  "english": "English"
+  "english": "English",
+  "light": "Light",
+  "dark": "Dark",
+  "settings": "Settings",
+  "radio": "Radio",
+  "sebha": "Sebha",
+  "quran": "Quran",
+  "counter": "Tasbeeh Counter",
+  "quranradio": "Quran Kareem Radio",
+  "lang": "Language",
+  "theme": "Theming"
+
+
+
 }

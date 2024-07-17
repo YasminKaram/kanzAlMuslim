@@ -32,10 +32,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Stack(
       children: [
         provider.themeingMode == ThemeMode.light
-            ? Image.asset("assets/images/background.png",
-                width: double.infinity, fit: BoxFit.fill)
-            : Image.asset("assets/images/darkback.png",
-                width: double.infinity, fit: BoxFit.fill),
+            ? Image.asset(
+                "assets/images/light.jpg",
+                width: double.infinity,
+                fit: BoxFit.fill,
+                height: double.infinity,
+              )
+            : Image.asset(
+                "assets/images/dark.jpeg",
+                width: double.infinity,
+                fit: BoxFit.fill,
+                height: double.infinity,
+              ),
         Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
@@ -51,23 +59,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 BottomNavigationBarItem(
                     backgroundColor: Theme.of(context).colorScheme.background,
                     icon: ImageIcon(AssetImage("assets/images/quran.png")),
-                    label: "Quran"),
+                    label: AppLocalizations.of(context)!.quran),
                 BottomNavigationBarItem(
                     backgroundColor: Theme.of(context).colorScheme.background,
                     icon: ImageIcon(AssetImage("assets/images/sebha.png")),
-                    label: "Sebha"),
+                    label: AppLocalizations.of(context)!.sebha),
                 BottomNavigationBarItem(
                     backgroundColor: Theme.of(context).colorScheme.background,
                     icon: ImageIcon(AssetImage("assets/images/radio.png")),
-                    label: "Radio"),
+                    label: AppLocalizations.of(context)!.radio),
                 BottomNavigationBarItem(
                     backgroundColor: Theme.of(context).colorScheme.background,
                     icon: ImageIcon(AssetImage("assets/images/ahdeth.png")),
-                    label: "Ahadeth"),
+                    label: AppLocalizations.of(context)!.ahadeth),
                 BottomNavigationBarItem(
                     backgroundColor: Theme.of(context).colorScheme.background,
                     icon: Icon(Icons.settings),
-                    label: "Settings"),
+                    label: AppLocalizations.of(context)!.settings),
               ],
             ),
             body: tabs[index]),

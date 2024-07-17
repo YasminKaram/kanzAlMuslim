@@ -129,8 +129,8 @@ class QuranScreen extends StatelessWidget {
         Center(
             child: Image.asset(
           "assets/images/quran_image.png",
-          width: 205,
-          height: 227,
+          width: 300,
+          height: 250,
         )),
         Divider(
           color: MyThemeData.primaryColor,
@@ -139,8 +139,7 @@ class QuranScreen extends StatelessWidget {
         Text((AppLocalizations.of(context)!.suraName),
             style: Theme.of(context)
                 .textTheme
-                .bodyMedium!
-                .copyWith(color: MyThemeData.blackColor)),
+                .bodyMedium!),
         Divider(
           color: MyThemeData.primaryColor,
           thickness: 2,

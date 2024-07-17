@@ -19,7 +19,7 @@ class LanguageBottomSheet extends StatelessWidget {
             child: Row(
               children: [
                 Text(AppLocalizations.of(context)!.english,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: provider.languageCode == "en"
                             ? Theme.of(context).colorScheme.primary
                             : Theme.of(context).colorScheme.secondary)),
@@ -39,7 +39,7 @@ class LanguageBottomSheet extends StatelessWidget {
             child: Row(
               children: [
                 Text(AppLocalizations.of(context)!.arabic,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: provider.languageCode == "ar"
                             ? Theme.of(context).colorScheme.primary
                             : Theme.of(context).colorScheme.secondary)),

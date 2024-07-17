@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/MyThemedata.dart';
 
 class SebhaScreen extends StatefulWidget {
@@ -23,6 +24,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
             "assets/images/head_of_seb7a.png",
@@ -34,11 +36,12 @@ class _SebhaScreenState extends State<SebhaScreen> {
                   angle: angle,
                   child: Image.asset(
                     "assets/images/body_of_seb7a.png",
+                    height: 200,
                   )),
               onTap: () {
                 if (index < words.length) {
                   count++;
-                  if (count == 34) {
+                  if (count == 11) {
                     index++;
                     count = 0;
                     if (index >= words.length) {
@@ -54,9 +57,9 @@ class _SebhaScreenState extends State<SebhaScreen> {
             ),
           ),
           SizedBox(
-            height: 25,
+            height: 28,
           ),
-          Text("Tasbeeh Counter",
+          Text(AppLocalizations.of(context)!.counter,
               style: Theme.of(context)
                   .textTheme
                   .bodySmall!
